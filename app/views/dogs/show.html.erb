@@ -1,0 +1,4 @@
+<h1><%= "Show Page for #{@dog.name}" %></h1>
+<h3><%= "Breed: #{@dog.breed}" %></h3>
+<h3><%= "Age: #{@dog.age}" %></h3>
+<p><%= "Owners: #{@dog.employees.map{|employee| employee.first_name}.join(", ")}" %></p>

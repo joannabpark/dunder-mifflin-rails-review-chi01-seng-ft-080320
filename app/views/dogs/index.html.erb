@@ -1,0 +1,7 @@
+<h1>Index Page</h1>
+
+<% @dogs.each do |dog| %>
+<h3><%= link_to "#{dog.name}", dog_path(dog) %></h3>
+<% end %>
+
+<%= link_to "Sorted Dogs", sorted_dog_path %>
